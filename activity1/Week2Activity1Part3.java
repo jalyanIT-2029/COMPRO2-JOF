@@ -1,13 +1,14 @@
-package week2;  
+package activity1;
+
 public class Week2Activity1Part3 {
 
     public static void main(String[] args) {
 
-        String[][] theater = {{"-", "-", "-", "-", "-", "-", "-", "-"},
-        {"-", "-", "-", "-", "-", "-", "-", "-"},
-        {"-", "-", "-", "-", "-", "-", "-", "-"},
-        {"-", "-", "-", "-", "-", "-", "-", "-"},
-        {"-", "-", "-", "-", "-", "-", "-", "-"}};
+        String[][] theater = { { "-", "-", "-", "-", "-", "-", "-", "-" },
+                { "-", "-", "-", "-", "-", "-", "-", "-" },
+                { "-", "-", "-", "-", "-", "-", "-", "-" },
+                { "-", "-", "-", "-", "-", "-", "-", "-" },
+                { "-", "-", "-", "-", "-", "-", "-", "-" } };
 
         theater[2][5] = "x";
         theater[0][0] = "x";
@@ -32,9 +33,8 @@ public class Week2Activity1Part3 {
             }
             System.out.println();
         }
-       
+
         System.out.println("Total number of booked seats: " + totalBooked);
-        System.out.println("Total number of available seats: "+ totalAvailable);
+        System.out.println("Total number of available seats: " + totalAvailable);
     }
 }
-
