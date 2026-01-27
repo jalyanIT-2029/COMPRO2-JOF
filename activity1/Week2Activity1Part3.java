@@ -4,14 +4,7 @@ public class Week2Activity1Part3 {
 
     public static void main(String[] args) {
 
-        String[][] theater = { { "-", "-", "-", "-", "-", "-", "-", "-" },
-                { "-", "-", "-", "-", "-", "-", "-", "-" },
-                { "-", "-", "-", "-", "-", "-", "-", "-" },
-                { "-", "-", "-", "-", "-", "-", "-", "-" },
-                { "-", "-", "-", "-", "-", "-", "-", "-" } };
-
-        theater[2][5] = "x";
-        theater[0][0] = "x";
+        String[][] theater = new String[5][8];
 
         System.out.println("Theater Seating Chart (- = Available, x = Booked)");
         System.out.println();
@@ -23,7 +16,12 @@ public class Week2Activity1Part3 {
 
         for (rows = 0; rows < theater.length; rows++) {
             for (columns = 0; columns < theater[rows].length; columns++) {
-                System.out.print(theater[rows][columns] + " | ");
+                theater[rows][columns] = "-";
+
+                theater[2][5] = "x";
+                theater[0][0] = "x";
+
+                System.out.print(" |" + theater[rows][columns] + "| ");
 
                 if ("x".equals(theater[rows][columns])) {
                     totalBooked++;
