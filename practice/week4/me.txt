@@ -1,0 +1,5 @@
+First name: Jhelianne
+Last name: Figuerres
+age: 19 yrs old
+Email: jhelianne.figuerres@lorma.edu
+Phone: 09916255408
